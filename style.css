@@ -1,0 +1,125 @@
+/* styles.css */
+
+body {
+  @import url('/Users/amal/Desktop/Project 4 cc/nasalization.css');
+  font-family: 'nasalization', sans-serif;
+  font-style: normal;
+  text-align: center;
+  background-color: #f9f9f9; 
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent horizontal scrollbars */
+  background-image: url('/Users/amal/Desktop/Project 4 cc/galaxy.png'); /* Add background image */
+  background-size: cover; /* Cover the entire background */
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffcccc; /* Pink background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Needed for absolute positioning of polka dots */
+}
+
+.title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.crystal-ball-container {
+  position: relative;
+}
+
+.crystal-ball {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.output {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+}
+
+/* Polka dots animation */
+@keyframes polkaDotAnimation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-100%) rotate(360deg);
+  }
+  100% {
+    transform: translateY(0) rotate(720deg);
+  }
+}
+
+.polka-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: polkaDotAnimation 5s infinite;
+}
+
+/* Polka dot positions */
+.dot1 {
+  top: 0;
+  left: 10%;
+}
+
+.dot2 {
+  top: 20%;
+  left: 20%;
+}
+
+.dot3 {
+  top: 30%;
+  left: 50%;
+}
+
+.dot4 {
+  top: 50%;
+  left: 80%;
+}
+
+.dot5 {
+  top: 80%;
+  left: 70%;
+}

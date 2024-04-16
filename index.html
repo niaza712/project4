@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystal Ball Oracle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Crystal Ball Oracle</h1>
+    <div class="input-container">
+      <label for="question" class="label">Focus your thoughts or ask a question:</label><br>
+      <textarea id="question" name="question" rows="4" cols="50" class="textarea"></textarea><br>
+      <button onclick="performDivination()" class="button">Consult the Oracle</button>
+    </div>
+    <div class="crystal-ball-container">
+      <img src="/Users/amal/Desktop/Project 4 cc/ crystal_ball.png" alt="Crystal Ball" class="crystal-ball">
+      <div id="output" class="output">
+        <!-- Output div to display divinatory message -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
